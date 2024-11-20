@@ -59,8 +59,6 @@ accomo-vista
 ├── types/ # TypeScript types and interfaces
 └── package.json # Project dependencies and scripts
 
-yaml
-Copy code
 
 ---
 
@@ -73,21 +71,20 @@ Copy code
 Install dependencies:
 
 bash
-Copy code
+
 npm install  
 Configure environment variables:
 
 Create a .env.local file at the root of your project.
 Add necessary configurations (e.g., API URL):
-arduino
-Copy code
+
 NEXT_PUBLIC_API_URL=http://localhost:3001  
 Running the Application
 Development Server
 Start the development server with the following command:
 
 bash
-Copy code
+
 npm run dev  
 This will start the application at http://localhost:3000.
 
@@ -95,14 +92,14 @@ Production Build
 To create a production build:
 
 bash
-Copy code
+
 npm run build  
 npm start  
 Testing
 Run the test suite:
 
 bash
-Copy code
+
 npm run test  
 Development Notes
 Dynamic Content: Hotel data is fetched dynamically from the backend using Express.js routes and integrated into Next.js components.
@@ -117,23 +114,24 @@ types/: TypeScript interfaces and types for the project.
 tests/: Unit and integration tests for the application.
 Contributing
 Fork the repository.
+
 Create a new feature branch:
 bash
-Copy code
-git checkout -b feature-name  
+git checkout -b feature-name
+
 Commit your changes:
 bash
-Copy code
 git commit -m "Add new feature"  
+
 Push to the branch:
 bash
-Copy code
+
 git push origin feature-name  
 Create a Pull Request.
 License
 This project is licensed under the MIT License.
 
-vbnet
-Copy code
+
+
 
 Let me know if you need further adjustments!
