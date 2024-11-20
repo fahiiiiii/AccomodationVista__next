@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Accomodation Vista
+A modern, feature-rich web application for showcasing hotel accommodations. Built with Next.js, React, TypeScript, and TailwindCSS, the project provides dynamic hotel galleries, room details, and interactive user experiences.
 
-## Getting Started
+Table of Contents
+Features
+Technologies Used
+Project Structure
+Installation
+Running the Application
+Development Notes
+Folder Structure
+Contributing
+License
+Features
+Dynamic Image Galleries: Displays hotel images dynamically fetched from the server.
+Room and Property Details: Showcase room spaces, property descriptions, and amenities.
+Interactive Components: Includes FAQs, reviews, and host details for enhanced user engagement.
+Responsive Design: Fully responsive using TailwindCSS.
+Backend Integration: Supports API-based backend with Express.js for fetching dynamic hotel data.
+Technologies Used
+Frontend
+Next.js: For server-rendered and statically generated pages.
+React: Component-based library for building the UI.
+TailwindCSS: For styling and responsive design.
+Backend
+Express.js: RESTful API for fetching and serving hotel data.
+Axios: For API calls to retrieve dynamic content.
+Testing
+Jest: Unit testing framework.
+React Testing Library: For component testing.
+Utilities
+TypeScript: Strongly-typed JavaScript for better code quality.
+PostCSS: To handle TailwindCSS styles.
+Project Structure
+graphql
+Copy code
+accomo-vista  
+├── components/          # UI components like Navbar, Gallery, etc.  
+├── pages/               # Next.js page files  
+├── public/              # Static assets (e.g., images, fonts)  
+├── routes/              # Backend API routes (Express.js)  
+├── styles/              # Global CSS/Tailwind configuration  
+├── tests/               # Test files for components and pages  
+├── types/               # TypeScript types and interfaces  
+└── package.json         # Project dependencies and scripts  
+Installation
+Clone the repository:
 
-First, run the development server:
+bash
+Copy code
+git clone https://github.com/fahiiiiii/AccomodationVista__next.git  
+cd AccomodationVista__next  
+Install dependencies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+bash
+Copy code
+npm install  
+Configure environment variables:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a .env.local file at the root of your project.
+Add necessary configurations (e.g., API URL):
+arduino
+Copy code
+NEXT_PUBLIC_API_URL=http://localhost:3001  
+Running the Application
+Development Server
+Start the development server with the following command:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+bash
+Copy code
+npm run dev  
+This will start the application at http://localhost:3000.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Production Build
+To create a production build:
 
-## Learn More
+bash
+Copy code
+npm run build  
+npm start  
+Testing
+Run the test suite:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+bash
+Copy code
+npm run test  
+Development Notes
+Dynamic Content: Hotel data is fetched dynamically from the backend using Express.js routes and integrated into Next.js components.
+Styling: TailwindCSS simplifies responsiveness and UI design.
+TypeScript: Ensures type safety and scalability in both frontend and backend.
+Folder Structure
+components/: Contains reusable UI components. Examples: Navbar.tsx, HotelGallery.tsx.
+pages/: Next.js routing and main pages (e.g., page.tsx).
+routes/: API routes or server-side logic for fetching hotel details.
+public/: Static files such as images and assets.
+types/: TypeScript interfaces and types for the project.
+tests/: Unit and integration tests for the application.
+Contributing
+Fork the repository.
+Create a new feature branch:
+bash
+Copy code
+git checkout -b feature-name  
+Commit your changes:
+bash
+Copy code
+git commit -m "Add new feature"  
+Push to the branch:
+bash
+Copy code
+git push origin feature-name  
+Create a Pull Request.
+License
+This project is licensed under the MIT License.
