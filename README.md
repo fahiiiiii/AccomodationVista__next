@@ -71,11 +71,11 @@ accomo-vista
 Install dependencies:
 
 bash
-
 npm install  
-Configure environment variables:
 
+Configure environment variables:
 Create a .env.local file at the root of your project.
+
 Add necessary configurations (e.g., API URL):
 
 NEXT_PUBLIC_API_URL=http://localhost:3001  
@@ -92,15 +92,15 @@ Production Build
 To create a production build:
 
 bash
-
 npm run build  
-npm start  
+npm start 
+
 Testing
 Run the test suite:
 
 bash
-
 npm run test  
+
 Development Notes
 Dynamic Content: Hotel data is fetched dynamically from the backend using Express.js routes and integrated into Next.js components.
 Styling: TailwindCSS simplifies responsiveness and UI design.
@@ -125,9 +125,10 @@ git commit -m "Add new feature"
 
 Push to the branch:
 bash
-
 git push origin feature-name  
+
 Create a Pull Request.
+
 License
 This project is licensed under the MIT License.
 
